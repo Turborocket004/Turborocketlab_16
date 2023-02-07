@@ -17,3 +17,13 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int &a,int &b,int &c,int &d){
+    int *x[4] = {&a,&b,&c,&d};
+    int y = rand()%4;
+    int z = rand()%4;
+    
+    int a1 = *x[y];
+    *x[y] = *x[z];
+    *x[z] = a1;
+    
+    }
